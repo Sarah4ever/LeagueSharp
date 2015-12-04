@@ -23,7 +23,6 @@ namespace Thresh
             {
                 return;
             }
-        {
             Q = new Spell(SpellSlot.Q, 1100);
             Q.SetSkillshot(0.500f, 70, 1900f, true, SkillshotType.SkillshotLine);
             E = new Spell(SpellSlot.E, 400);
