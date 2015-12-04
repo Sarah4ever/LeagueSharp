@@ -19,7 +19,7 @@ namespace Thresh
         private static void Game_OnGameLoad(EventArgs args)
                 {
             Player = ObjectManager.Player;
-            if (!ObjectManager.Player.IsChampion("Nunu"))
+            if (!ObjectManager.Player.IsChampion("Thresh"))
             {
                 return;
             }
