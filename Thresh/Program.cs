@@ -17,6 +17,12 @@ namespace Thresh
         }
 
         private static void Game_OnGameLoad(EventArgs args)
+                {
+            Player = ObjectManager.Player;
+            if (!ObjectManager.Player.IsChampion("Nunu"))
+            {
+                return;
+            }
         {
             Q = new Spell(SpellSlot.Q, 1100);
             Q.SetSkillshot(0.500f, 70, 1900f, true, SkillshotType.SkillshotLine);
